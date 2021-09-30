@@ -30,9 +30,6 @@ public class Categoria {
 		return produto;
 	}
 
-	public void setProduto(List<Produto> produto) {
-		this.produto = produto;
-	}
 
 	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("categoria")
@@ -53,6 +50,9 @@ public class Categoria {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	
+
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
+	}
 	
 }

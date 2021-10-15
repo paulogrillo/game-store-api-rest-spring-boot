@@ -38,9 +38,7 @@ public class Produto {
 	@NotNull
 	@Size(min = 10, max = 200)
 	private String descricao;
-	
-	/*
-	 * 
+
 	 
 	@Column(name = "Preço")
 	@NotNull
@@ -51,10 +49,8 @@ public class Produto {
 	
 	@Column(name = "Estoque")
 	@NotNull
-	@Size(min = 1, max = 999)
 	private int estoque;
 	
-	*/
 	@Temporal(TemporalType.TIMESTAMP)
     private Date data = new java.sql.Date(System.currentTimeMillis());
 	
@@ -84,9 +80,7 @@ public class Produto {
 		this.nome = nome;
 	}
 
-	/*
-	 * 
-	
+
 	public BigDecimal getPreco() {
 		return preco;
 	}
@@ -105,7 +99,7 @@ public class Produto {
 	public void setEstoque(int estoque) {
 		this.estoque = estoque;
 	}
- */
+
 
 	public Date getData() {
 		return data;
